@@ -1,0 +1,62 @@
+/home/laulau/miniconda3/envs/quast/bin/quast data/raw/genome/E745.fasta -o analyse/02_assembly_evaluation/quast_output --min-contig 500
+
+Version: 5.3.0
+
+System information:
+  OS: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39 (linux_64)
+  Python version: 3.13.9
+  CPUs number: 4
+
+Started: 2025-12-23 19:49:08
+
+Logging to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/quast.log
+NOTICE: Maximum number of threads is set to 1 (use --threads option to set it manually)
+
+CWD: /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project
+Main parameters: 
+  MODE: default, threads: 1, min contig length: 500, min alignment length: 65, min alignment IDY: 95.0, \
+  ambiguity: one, min local misassembly length: 200, min extensive misassembly length: 1000
+
+Contigs:
+  Pre-processing...
+  data/raw/genome/E745.fasta ==> E745
+
+2025-12-23 19:49:09
+Running Basic statistics processor...
+  Contig files: 
+    E745
+  Calculating N50 and L50...
+    E745, N50 = 2765010, L50 = 1, auN = 2431533.0, Total length = 3168410, GC % = 37.70, # N's per 100 kbp =  0.00
+  Drawing Nx plot...
+    saved to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/basic_stats/Nx_plot.pdf
+  Drawing cumulative plot...
+    saved to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/basic_stats/cumulative_plot.pdf
+  Drawing GC content plot...
+    saved to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/basic_stats/GC_content_plot.pdf
+  Drawing E745 GC content plot...
+    saved to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/basic_stats/E745_GC_content_plot.pdf
+Done.
+
+NOTICE: Genes are not predicted by default. Use --gene-finding or --glimmer option to enable it.
+
+2025-12-23 19:49:15
+Creating large visual summaries...
+This may take a while: press Ctrl-C to skip this step..
+  1 of 2: Creating PDF with all tables and plots...
+  2 of 2: Creating Icarus viewers...
+Done
+
+2025-12-23 19:49:16
+RESULTS:
+  Text versions of total report are saved to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/report.txt, report.tsv, and report.tex
+  Text versions of transposed total report are saved to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/transposed_report.txt, transposed_report.tsv, and transposed_report.tex
+  HTML version (interactive tables and plots) is saved to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/report.html
+  PDF version (tables and plots) is saved to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/report.pdf
+  Icarus (contig browser) is saved to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/icarus.html
+  Log is saved to /mnt/c/Users/PC/Documents/FISE2/bioinfo/projet/NGS_project/analyse/02_assembly_evaluation/quast_output/quast.log
+
+Finished: 2025-12-23 19:49:22
+Elapsed time: 0:00:14.134447
+NOTICEs: 2; WARNINGs: 1; non-fatal ERRORs: 0
+
+Thank you for using QUAST!

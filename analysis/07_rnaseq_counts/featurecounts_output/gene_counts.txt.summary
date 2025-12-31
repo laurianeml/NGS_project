@@ -1,0 +1,15 @@
+Status	analyse/06_rnaseq_mapping/ERR1797969.sorted.bam	analyse/06_rnaseq_mapping/ERR1797970.sorted.bam	analyse/06_rnaseq_mapping/ERR1797971.sorted.bam	analyse/06_rnaseq_mapping/ERR1797972.sorted.bam	analyse/06_rnaseq_mapping/ERR1797973.sorted.bam	analyse/06_rnaseq_mapping/ERR1797974.sorted.bam
+Assigned	168278	194357	181456	244662	242916	220292
+Unassigned_Unmapped	2609	2691	2736	2615	2603	2249
+Unassigned_Read_Type	0	0	0	0	0	0
+Unassigned_Singleton	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0
+Unassigned_MultiMapping	0	0	0	0	0	0
+Unassigned_Secondary	0	0	0	0	0	0
+Unassigned_NonSplit	0	0	0	0	0	0
+Unassigned_NoFeatures	86285	91994	93072	20173	19715	18093
+Unassigned_Overlapping_Length	0	0	0	0	0	0
+Unassigned_Ambiguity	6923	8264	7477	11754	12284	10779
