@@ -7,7 +7,7 @@ and differential expression analysis.
 ## Repository structure
 
 - `scripts/` : shell scripts used for the analysis
-- `results/` : output directories (not tracked)
+- `results/` : data analysis
 - `data/` : raw data (not included)
 
 ## Analysis steps
