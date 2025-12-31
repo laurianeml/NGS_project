@@ -1,0 +1,189 @@
+.
+├── analyse
+│   ├── 01_genome_assembly
+│   │   └── canu
+│   ├── 02_assembly_evaluation
+│   │   ├── busco_output
+│   │   │   ├── logs
+│   │   │   ├── prodigal_output
+│   │   │   ├── run_firmicutes_odb10
+│   │   │   ├── short_summary.specific.firmicutes_odb10.busco_output.json
+│   │   │   └── short_summary.specific.firmicutes_odb10.busco_output.txt
+│   │   └── quast_output
+│   │       ├── basic_stats
+│   │       ├── icarus.html
+│   │       ├── icarus_viewers
+│   │       ├── quast.log
+│   │       ├── report.html
+│   │       ├── report.pdf
+│   │       ├── report.tex
+│   │       ├── report.tsv
+│   │       ├── report.txt
+│   │       ├── transposed_report.tex
+│   │       ├── transposed_report.tsv
+│   │       └── transposed_report.txt
+│   ├── 03_annotation
+│   │   └── prokka_output
+│   │       ├── E745.err
+│   │       ├── E745.faa
+│   │       ├── E745.ffn
+│   │       ├── E745.fna
+│   │       ├── E745.fsa
+│   │       ├── E745.gbk
+│   │       ├── E745.gff
+│   │       ├── E745.log
+│   │       ├── E745.sqn
+│   │       ├── E745.tbl
+│   │       ├── E745.tsv
+│   │       └── E745.txt
+│   ├── 04_rnaseq_qc
+│   │   ├── fastqc_raw_output
+│   │   │   ├── ERR1797969.subsampled_1_fastqc.html
+│   │   │   ├── ERR1797969.subsampled_1_fastqc.zip
+│   │   │   ├── ERR1797969.subsampled_2_fastqc.html
+│   │   │   ├── ERR1797969.subsampled_2_fastqc.zip
+│   │   │   ├── ERR1797970.subsampled_1_fastqc.html
+│   │   │   ├── ERR1797970.subsampled_1_fastqc.zip
+│   │   │   ├── ERR1797970.subsampled_2_fastqc.html
+│   │   │   ├── ERR1797970.subsampled_2_fastqc.zip
+│   │   │   ├── ERR1797971.subsampled_1_fastqc.html
+│   │   │   ├── ERR1797971.subsampled_1_fastqc.zip
+│   │   │   ├── ERR1797971.subsampled_2_fastqc.html
+│   │   │   ├── ERR1797971.subsampled_2_fastqc.zip
+│   │   │   ├── ERR1797972.subsampled_1_fastqc.html
+│   │   │   ├── ERR1797972.subsampled_1_fastqc.zip
+│   │   │   ├── ERR1797972.subsampled_2_fastqc.html
+│   │   │   ├── ERR1797972.subsampled_2_fastqc.zip
+│   │   │   ├── ERR1797973.subsampled_1_fastqc.html
+│   │   │   ├── ERR1797973.subsampled_1_fastqc.zip
+│   │   │   ├── ERR1797973.subsampled_2_fastqc.html
+│   │   │   ├── ERR1797973.subsampled_2_fastqc.zip
+│   │   │   ├── ERR1797974.subsampled_1_fastqc.html
+│   │   │   ├── ERR1797974.subsampled_1_fastqc.zip
+│   │   │   ├── ERR1797974.subsampled_2_fastqc.html
+│   │   │   └── ERR1797974.subsampled_2_fastqc.zip
+│   │   ├── fastqc_trimmed_output
+│   │   │   ├── ERR1797969_R1_trimmed_fastqc.html
+│   │   │   ├── ERR1797969_R1_trimmed_fastqc.zip
+│   │   │   ├── ERR1797969_R2_trimmed_fastqc.html
+│   │   │   ├── ERR1797969_R2_trimmed_fastqc.zip
+│   │   │   ├── ERR1797970_R1_trimmed_fastqc.html
+│   │   │   ├── ERR1797970_R1_trimmed_fastqc.zip
+│   │   │   ├── ERR1797970_R2_trimmed_fastqc.html
+│   │   │   ├── ERR1797970_R2_trimmed_fastqc.zip
+│   │   │   ├── ERR1797971_R1_trimmed_fastqc.html
+│   │   │   ├── ERR1797971_R1_trimmed_fastqc.zip
+│   │   │   ├── ERR1797971_R2_trimmed_fastqc.html
+│   │   │   ├── ERR1797971_R2_trimmed_fastqc.zip
+│   │   │   ├── ERR1797972_R1_trimmed_fastqc.html
+│   │   │   ├── ERR1797972_R1_trimmed_fastqc.zip
+│   │   │   ├── ERR1797972_R2_trimmed_fastqc.html
+│   │   │   ├── ERR1797972_R2_trimmed_fastqc.zip
+│   │   │   ├── ERR1797973_R1_trimmed_fastqc.html
+│   │   │   ├── ERR1797973_R1_trimmed_fastqc.zip
+│   │   │   ├── ERR1797973_R2_trimmed_fastqc.html
+│   │   │   ├── ERR1797973_R2_trimmed_fastqc.zip
+│   │   │   ├── ERR1797974_R1_trimmed_fastqc.html
+│   │   │   ├── ERR1797974_R1_trimmed_fastqc.zip
+│   │   │   ├── ERR1797974_R2_trimmed_fastqc.html
+│   │   │   └── ERR1797974_R2_trimmed_fastqc.zip
+│   │   ├── multiqc_raw_output
+│   │   │   ├── multiqc_data
+│   │   │   └── multiqc_report.html
+│   │   └── multiqc_trimmed_output
+│   │       ├── multiqc_data
+│   │       └── multiqc_report.html
+│   ├── 05_trimming
+│   │   └── trimmomatic_output
+│   │       ├── ERR1797969_R1_trimmed.fastq.gz
+│   │       ├── ERR1797969_R1_unpaired.fastq.gz
+│   │       ├── ERR1797969_R2_trimmed.fastq.gz
+│   │       ├── ERR1797969_R2_unpaired.fastq.gz
+│   │       ├── ERR1797970_R1_trimmed.fastq.gz
+│   │       ├── ERR1797970_R1_unpaired.fastq.gz
+│   │       ├── ERR1797970_R2_trimmed.fastq.gz
+│   │       ├── ERR1797970_R2_unpaired.fastq.gz
+│   │       ├── ERR1797971_R1_trimmed.fastq.gz
+│   │       ├── ERR1797971_R1_unpaired.fastq.gz
+│   │       ├── ERR1797971_R2_trimmed.fastq.gz
+│   │       ├── ERR1797971_R2_unpaired.fastq.gz
+│   │       ├── ERR1797972_R1_trimmed.fastq.gz
+│   │       ├── ERR1797972_R1_unpaired.fastq.gz
+│   │       ├── ERR1797972_R2_trimmed.fastq.gz
+│   │       ├── ERR1797972_R2_unpaired.fastq.gz
+│   │       ├── ERR1797973_R1_trimmed.fastq.gz
+│   │       ├── ERR1797973_R1_unpaired.fastq.gz
+│   │       ├── ERR1797973_R2_trimmed.fastq.gz
+│   │       ├── ERR1797973_R2_unpaired.fastq.gz
+│   │       ├── ERR1797974_R1_trimmed.fastq.gz
+│   │       ├── ERR1797974_R1_unpaired.fastq.gz
+│   │       ├── ERR1797974_R2_trimmed.fastq.gz
+│   │       └── ERR1797974_R2_unpaired.fastq.gz
+│   ├── 06_rnaseq_mapping
+│   │   └── samtools_output
+│   │       ├── ERR1797969.sorted.bam
+│   │       ├── ERR1797969.sorted.bam.bai
+│   │       ├── ERR1797970.sorted.bam
+│   │       ├── ERR1797970.sorted.bam.bai
+│   │       ├── ERR1797971.sorted.bam
+│   │       ├── ERR1797971.sorted.bam.bai
+│   │       ├── ERR1797972.sorted.bam
+│   │       ├── ERR1797972.sorted.bam.bai
+│   │       ├── ERR1797973.sorted.bam
+│   │       ├── ERR1797973.sorted.bam.bai
+│   │       ├── ERR1797974.sorted.bam
+│   │       └── ERR1797974.sorted.bam.bai
+│   ├── 07_rnaseq_counts
+│   │   └── featurecounts_output
+│   │       ├── gene_counts.txt
+│   │       └── gene_counts.txt.summary
+│   └── 08_differential_expression
+├── arborescence.txt
+├── busco_downloads
+│   ├── file_versions.tsv
+│   └── lineages
+│       └── firmicutes_odb10
+│           ├── ancestral
+│           ├── ancestral_variants
+│           ├── dataset.cfg
+│           ├── hmms
+│           ├── info
+│           ├── lengths_cutoff
+│           ├── links_to_ODB10.txt
+│           ├── refseq_db.faa.gz
+│           ├── refseq_db.faa.gz.md5
+│           └── scores_cutoff
+├── data
+│   ├── raw
+│   │   ├── genome
+│   │   │   ├── E745.CP014529.1.CHR.fasta
+│   │   │   ├── E745.CP014530.1.Pl1.fasta
+│   │   │   ├── E745.CP014531.1.Pl2.fasta
+│   │   │   ├── E745.CP014532.1.Pl3.fasta
+│   │   │   ├── E745.CP014533.1.Pl4.fasta
+│   │   │   ├── E745.CP014534.1.Pl5.fasta
+│   │   │   ├── E745.CP014535.1.Pl6.fasta
+│   │   │   ├── E745.fasta
+│   │   │   ├── E745.fasta.amb
+│   │   │   ├── E745.fasta.ann
+│   │   │   ├── E745.fasta.bwt
+│   │   │   ├── E745.fasta.pac
+│   │   │   ├── E745.fasta.sa
+│   │   │   ├── Nanopore.reads
+│   │   │   ├── PacBio.reads
+│   │   │   └── illumina.reads
+│   │   └── transcriptome
+│   │       └── 0.Raw-data
+│   └── references
+│       └── paper
+│           └── Paper.pdf
+└── script
+    ├── 01_genome_assembly.sh
+    ├── 02_assembly_evaluation.sh
+    ├── 03_annotation.sh
+    ├── 04_rnaseq_qc.sh
+    ├── 05_trimming.sh
+    ├── 06_rnaseq_mapping.sh
+    └── 07_rnaseq_counts.sh
+
+44 directories, 143 files
